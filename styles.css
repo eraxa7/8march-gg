@@ -1,0 +1,59 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background: linear-gradient(to right, #ff758c, #ff7eb3);
+    color: white;
+    padding: 50px;
+    overflow: hidden;
+}
+
+.container {
+    max-width: 600px;
+    margin: auto;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    border-radius: 15px;
+}
+
+h1 {
+    font-size: 36px;
+    opacity: 0;
+    animation: fadeIn 2s forwards;
+}
+
+p {
+    font-size: 18px;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: slideUp 2s forwards 1s;
+}
+
+img {
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 20px;
+    opacity: 0;
+    transform: scale(0.8);
+    animation: zoomIn 1.5s forwards 2s;
+}
+
+/* Анимации */
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes zoomIn {
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
